@@ -1,0 +1,181 @@
+.popular
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 10px 0px
+    font-family: sans-serif
+    &__title
+        text-align: center
+        & h2 
+            font-size: 65px
+            margin: 30px
+            @media screen and (max-width: 1300px)
+                font-size: 50px
+            @media screen and (max-width: 1100px)
+                font-size: 40px
+            @media screen and (max-width: 950px)
+                font-size: 30px
+            @media screen and (max-width: 450px)
+                font-size: 21px
+        & p
+            width: 63%
+            font-size: 25px
+            margin: 0px auto
+            @media screen and (max-width: 950px)
+                font-size: 18px
+            @media screen and (max-width: 450px)
+                font-size: 15px
+    &__dishes
+        width: 83%
+        margin: 80px auto
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        column-gap: 65px
+        row-gap: 100px
+        justify-content: space-evenly
+        @media screen and (max-width: 830px)
+            row-gap: 50px
+        @media screen and (max-width: 450px)
+            margin-bottom:  30px
+        .disheses
+            display: flex
+            flex-direction: column
+            width: 30%
+            height: 560px
+            border-radius: 30px
+            border: 1px solid #557cc9
+            @media screen and (max-width: 1300px)
+                width: 40%
+            @media screen and (max-width: 830px)
+                height: 450px
+                width: 42%
+            @media screen and (max-width: 550px)
+                height: 300px
+            &:hover
+                background-color: #557cc9
+                height: 570px
+                margin: -10px 0px
+                @media screen and (max-width: 1300px)
+                    width: 40%
+                @media screen and (max-width: 830px)
+                    height: 450px
+                @media screen and (max-width: 550px)
+                    height: 300px
+            &__icon
+                height: 45%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                object-fit: contain
+                @media screen and (max-width: 450px)
+                    height: 35%
+                & img
+                    display: flex
+                    flex-direction: column
+                    height: 100%
+                    width: auto
+                    margin: 70px auto 0
+                    border-radius: 50%
+                    object-fit: contain
+                    @media screen and (max-width: 850px)
+                        height: 75%
+                    @media screen and (max-width: 550px)
+                        margin: 0px auto 0
+            &__name
+                margin: 90px auto 0
+                font-size: 32px
+                width: 66%
+                text-align: center
+                line-height: 43px
+                @media screen and (max-width: 1450px)
+                    font-size: 24px
+                @media screen and (max-width: 850px)
+                    font-size: 21px
+                    margin: 30px auto 0
+                @media screen and (max-width: 750px)
+                    font-size: 17px
+                @media screen and (max-width: 550px)
+                    margin: 0px auto 0
+                    font-size: 15px
+                    line-height: 30px
+
+
+            &__price
+                display: flex
+                flex-direction: row
+                margin: 42px auto 0
+                width: 83%
+                justify-content: space-between
+                font-family: Verdana, sans-serif
+                @media screen and (max-width: 550px)
+                    margin: 30px auto 0
+                &__name
+                    margin: 10px 0px
+                    font-size: 28px
+                    @media screen and (max-width: 850px)
+                        font-size: 21px
+                    @media screen and (max-width: 550px)
+                        font-size: 15px
+                &__icon
+                    font-size: 38px
+                    margin: 3px 5px 0px 0px
+                    text-align: center
+                    width: 45px
+                    height: 45px
+                    background-color: #557cc9
+                    color: white
+                    border-radius: 9px
+                    @media screen and (max-width: 750px)
+                        font-size: 31px
+                        width: 40px
+                        height: 40px
+                    @media screen and (max-width: 550px)
+                        font-size: 21px
+                        width: 30px
+                        height: 30px
+                    &:hover
+                        background-color: white
+                        color: #557cc9
+    &__button
+        display: flex
+        width: 215px
+        margin: 0px auto
+        text-align: start
+        background-color: #557cc9
+        height: auto
+        border-radius: 34px
+        @media screen and (max-width: 450px)
+            width: 150px
+        & button 
+            font-size: 19px
+            background-color: #557cc9
+            color: white
+            border-radius: 17px
+            margin: 10px 10px 10px 25px
+            @media screen and (max-width: 450px)
+                margin: 10px 0px 10px 25px
+                font-size: 11px
+        & p
+            display: flex
+            align-items: center
+            color: #557cc9
+            font-size: 30px
+            margin: 10px auto
+            background-color: white
+            width: 20%
+            text-align: center
+            justify-content: center
+            border-radius: 50%
+            @media screen and (max-width: 450px)
+                width: 24%
+            & img 
+                width: 83%
+                background-color: #fff
+                border-radius: 50%
+                color: #4159d1
+                margin: 0 14px
+                padding: 10px
+                object-fit: contain

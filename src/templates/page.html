@@ -1,0 +1,37 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{# variable example #}	
+
+
+	
+	{# partial example #}
+	{% include "deliver__food/header.html" %}
+	{% include "deliver__food/introduction.html" %}
+	{% include "deliver__food/dishes.html" %}
+	{% include "deliver__food/order.html" %}
+	{% include "deliver__food/popular.html" %}
+	{% include "deliver__food/healthy.html" %}
+	{% include "deliver__food/app.html" %}
+	{% include "deliver__food/client.html" %}
+	{% include "deliver__food/tips.html" %}
+	{% include "deliver__food/subscribe.html" %}
+
+	
+	
+
+
+
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		{% endfor %}
+	{# end of example #}
+{% include "deliver__food/footer.html" %}
+
+{% endblock %}

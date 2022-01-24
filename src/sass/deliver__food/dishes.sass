@@ -1,0 +1,147 @@
+.dishes
+    width: 100%
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    &__title
+        width: 100%
+        display: flex
+        flex-direction: column
+        margin: 51px auto 0px
+        align-items: center
+        text-align: center
+        font-family: Verdana, sans-serif
+        & h2 
+            line-height: 65px
+            width: 40%
+            font-size: 47px
+            @media screen and (max-width: 1300px)
+                font-size: 50px
+            @media screen and (max-width: 1100px)
+                font-size: 40px
+            @media screen and (max-width: 950px)
+                font-size: 30px
+                line-height: 40px
+                width: 90%
+            @media screen and (max-width: 450px)
+                font-size: 18px
+                line-height: 30px
+
+        & p 
+            margin: 30px 0px
+            font-size: 18px
+            @media screen and (max-width: 1100px)
+                font-size: 16px
+            @media screen and (max-width: 950px)
+                font-size: 13px
+                width: 90%
+                margin: 30 auto
+            @media screen and (max-width: 450px)
+                font-size: 11px
+    &__content
+        margin: 10px 0px
+        width: 100%
+        height: 400px
+        .swiper 
+            width: 79%
+            height: 100%
+            padding-top: 20px
+            .swiper-wrapper
+                justify-content: space-between
+                .swiper-slide 
+                    width: 14%
+                    height: 260px
+                    border-radius: 30px
+                    display: flex
+                    flex-direction: column
+                    background: linear-gradient(0deg, white, #b6c9f0)
+                    @media screen and (max-width: 1100px)
+                        height: 215px
+                    @media screen and (max-width: 950px)
+                        height: 190px
+                    &:hover
+                        height: 285px
+                        background: #557cc9
+                        margin-top: -10px
+                        color: white
+                        @media screen and (max-width: 1100px)
+                            height: 230px
+                        @media screen and (max-width: 950px)
+                            height: 215px
+                    &__img 
+                        width: 50%
+                        margin: 30px auto
+                        padding: 15px
+                        border-radius: 50%
+                        background-color: white
+                        @media screen and (max-width: 950px)
+                            width: 35%
+                        & img
+                            width: 100%
+                            height: 100%
+                            object-fit: contain
+                    &__text
+                        text-align: center
+                        display: flex
+                        width: 100%
+                        font-size: 25px
+                        justify-content: center
+                        font-weight: bold
+                        @media screen and (max-width: 1100px)
+                            font-size: 21px
+                        @media screen and (max-width: 950px)
+                            font-size: 16px
+            .swiper-button-next
+                right: 0%
+                left: auto
+                top: 89%
+                width: 4%
+                background-color: white
+                padding: 25px 22px
+                border-radius: 50%
+                font-size: 18px
+                font-weight: bolder
+                color: #557cc9
+                border: 2px solid #557cc9
+                @media screen and (max-width: 1100px)
+                    top: 75%
+                @media screen and (max-width: 950px)
+                    top: 65%
+                    padding: 15px 20px
+
+                &:hover
+                    background-color: #557cc9
+                    color: white
+                &::after
+                    content: 'next'
+                    font-size: 15px
+                    font-weight: bold
+            .swiper-button-prev
+                left: auto
+                right: 6%
+                top: 89%
+                width: 4%
+                background-color: white
+                padding: 25px 22px
+                border-radius: 50%
+                font-size: 18px
+                font-weight: bolder
+                color: #557cc9
+                border: 2px solid #557cc9
+                @media screen and (max-width: 1100px)
+                    top: 75%
+                    right: 9%
+                @media screen and (max-width: 950px)
+                    top: 65%
+                    padding: 15px 20px
+                @media screen and (max-width: 700px)
+                    right: 15%
+                @media screen and (max-width: 450px)
+                    right: 17%
+                &:hover
+                    background-color: #557cc9
+                    color: white
+                &::after
+                    content: 'prev'
+                    font-size: 15px
+                    font-weight: bold

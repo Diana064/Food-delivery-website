@@ -1,0 +1,138 @@
+.healthy
+    margin: 120px 0px 0px
+    display: flex
+    flex-direction: row
+    font-family: sans-serif
+    @media screen and (max-width:620px)
+        margin: 50px 0 0
+    &__logo
+        width: 50%
+        margin: 0px 0 0 8%
+        @media screen and (max-width:620px)
+            display: none
+        & img
+            width: 98%
+            object-fit: contain
+    &__content
+        width: 63%
+        margin-top: 25px
+        @media screen and (max-width: 620px)
+            width: 100%
+        &__title
+            width: 100%
+            text-align: center
+            margin: 24px auto 0
+            font-family: Verdana, sans-serif
+            & h2 
+                font-size: 52px
+                width: 79%
+                text-align: start
+                margin: 0px auto
+                line-height: 71px
+                @media screen and (max-width: 1300px)
+                    font-size: 45px
+                @media screen and (max-width: 1100px)
+                    font-size: 35px
+                    line-height: 45px
+                @media screen and (max-width: 950px)
+                    font-size: 25px
+                @media screen and (max-width: 700px)
+                    font-size: 21px
+                    line-height: 30px
+                @media screen and (max-width: 620px)
+                    text-align: center
+                @media screen and (max-width: 450px)
+                    font-size: 18px
+            & p 
+                margin: 40px auto 0
+                font-size: 23px
+                width: 76%
+                text-align: start
+                @media screen and (max-width: 1100px)
+                    font-size: 18px
+                @media screen and (max-width: 950px)
+                    font-size: 16px
+                @media screen and (max-width: 700px)
+                    font-size: 11px
+                @media screen and (max-width: 620px)
+                    text-align: center
+                @media screen and (max-width: 450px)
+                    font-size: 11px
+
+        &__info
+            width: 77%
+            row-gap: 45px
+            column-gap: 50px
+            margin: 30px auto 0
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            @media screen and (max-width: 1100px)
+                row-gap: 10px
+            @media screen and (max-width: 700px)
+                margin: 30px
+            @media screen and (max-width: 620px)
+                width: 100%
+                margin: 30px auto
+                display: flex
+                justify-content: center
+        &__buttons
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            margin: 50px 12% 0 10%
+            width: 55%
+            justify-content: space-between
+            @media screen and (max-width: 1100px)
+                margin: 0px 20%
+            .button
+                width: 46%
+                & button
+                    font-size: 22px
+                    color: white
+                    background-color: #557cc9
+                    width: 100%
+                    height: 65px
+                    border-radius: 35px
+                    @media screen and (max-width: 1100px)
+                        font-size: 14px
+                        height: 40px
+                    @media screen and (max-width: 700px)
+                        font-size: 11px
+
+                &:nth-child(2)
+                    & button
+                        background-color: white
+                        color: #557cc9
+                        border: 1px solid #557cc9
+.info
+    width: 37%
+    height: 75px
+    display: flex
+    flex-direction: row
+    text-align: start
+    @media screen and (max-width: 1100px)
+        width: 43%
+    @media screen and (max-width: 910px)
+        width: 40%
+    @media screen and (max-width: 700px)
+        width: 34%
+    &__icon
+        width: 18%
+        margin: 23px 0 0
+        @media screen and (max-width: 1100px)
+            margin: 10px 0 0
+        & img
+            width: 20px
+            text-align: center
+            display: flex
+            justify-content: center
+            @media screen and (max-width: 1100px)
+                width: 10px
+    &__text
+        width: 90%
+        font-size: 25px
+        @media screen and (max-width: 1100px)
+            font-size: 16px
+        @media screen and (max-width: 700px)
+            font-size: 11px

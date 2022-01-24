@@ -1,0 +1,5 @@
+ProjectTitle: food-deliver
+
+PageList:
+- file: page.html
+  ready: 100

@@ -1,0 +1,187 @@
+.tips
+    width: 100%
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    margin: 9% auto 0
+    font-family: sans-serif
+    &__title
+        width: 54%
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        margin: 0 auto
+        @media screen and (max-width: 800px)
+            width: 80%
+        & h2 
+            width: 72%
+            margin: 10px auto 0
+            font-size: 59px
+            font-family: sans-serif
+            text-align: center
+            @media screen and (max-width: 1300px)
+                font-size: 45px
+            @media screen and (max-width: 1100px)
+                font-size: 35px
+                line-height: 45px
+            @media screen and (max-width: 950px)
+                font-size: 23px
+            @media screen and (max-width: 700px)
+                font-size: 21px
+                line-height: 30px
+            @media screen and (max-width: 620px)
+                text-align: center
+                width: 100%
+            @media screen and (max-width: 450px)
+                font-size: 18px
+        & p 
+            width: 98%
+            margin: 35px auto 0
+            font-size: 21px
+            text-align: center
+            line-height: 30px
+            @media screen and (max-width: 1100px)
+                font-size: 18px
+            @media screen and (max-width: 950px)
+                font-size: 16px
+            @media screen and (max-width: 700px)
+                font-size: 11px
+            @media screen and (max-width: 620px)
+                text-align: center
+            @media screen and (max-width: 450px)
+                font-size: 11px
+                line-height: 20px
+    &__content
+        display: flex
+        flex-direction: row
+        width: 85%
+        margin: 100px auto 0
+        column-gap: 65px
+        row-gap: 65px
+        flex-wrap: wrap
+        justify-content: space-around
+        @media screen and (max-width: 620px)
+            margin: 30px auto 0
+        &__block
+            display: flex
+            flex-direction: column
+            width: 30%
+            @media screen and (max-width: 1100px)
+                width: 45%
+            @media screen and (max-width: 800px)
+                width: 70%
+    &__button
+        display: flex
+        margin: 82px auto 0
+        text-align: start
+        background-color: #557cc9
+        flex-direction: row
+        align-items: center
+        font-size: 21px
+        color: #fff
+        border-radius: 36px
+        width: 170px
+        justify-content: space-between
+        @media screen and (max-width: 620px)
+            width: 150px
+            margin: 30px auto 0
+        @media screen and (max-width: 450px)
+            width: 120px
+        & button 
+            font-size: 21px
+            background-color: #557cc9
+            color: #fff
+            margin-left: 30px
+            width: 47%   
+            @media screen and (max-width: 620px)
+                margin: 10px 0px 10px 25px
+                font-size: 11px
+                width: 24%
+            @media screen and (max-width: 450px)
+                margin: 10px 0 10px 15px
+                font-size: 13px
+                width: 34%
+        & img 
+            margin: 7px 13px
+            padding: 12px
+            width: 26%
+            background-color: #fff
+            border-radius: 50%
+            color: #4159d1
+
+.blocks
+    &__img
+        display: flex
+        width: 100%
+        & img 
+            height: 300px
+            width: 98%
+            object-fit: cover
+            border-radius: 31px
+            @media screen and (max-width: 950px)
+                height: 250px
+            @media screen and (max-width: 620px)
+                height: 200px
+            @media screen and (max-width: 450px)
+                height: 150px
+            @media screen and (max-width: 350px)
+                height: 120px
+    &__text
+        width: 100%
+        margin: 52px auto 2px
+        @media screen and (max-width: 450px)
+            margin: 30px auto 2px
+        & h2 
+            font-size: 31px
+            line-height: 40px
+            font-weight: bold
+            @media screen and (max-width: 950px)
+                font-size: 28px
+            @media screen and (max-width: 700px)
+                font-size: 21px
+                line-height: 30px
+            @media screen and (max-width: 450px)
+                font-size: 15px
+                line-height: 20px
+        & p 
+            width: 100%
+            margin: 32px auto 0
+            font-size: 22px
+            line-height: 32px
+            @media screen and (max-width: 1100px)
+                font-size: 18px
+            @media screen and (max-width: 950px)
+                font-size: 16px
+            @media screen and (max-width: 700px)
+                font-size: 11px
+            @media screen and (max-width: 450px)
+                font-size: 11px
+                line-height: 22px
+                margin: 20px auto 0
+    &__more
+        width: 100%
+        height: auto
+        margin: 30px auto 0
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: end
+        @media screen and (max-width: 450px)
+            margin: 10px auto 0
+
+        &__text
+            font-size: 18px
+            font-weight: bold
+            @media screen and (max-width: 950px)
+                font-size: 16px
+            @media screen and (max-width: 700px)
+                font-size: 11px
+            @media screen and (max-width: 450px)
+                font-size: 11px
+
+        &__icon
+            width: 10%
+            height: auto
+            & img
+                width: 50%
+                margin-left: 10px
